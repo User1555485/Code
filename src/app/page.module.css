@@ -1,0 +1,399 @@
+.container {
+  max-width: 1300px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.navbar {
+  padding: 32px 0px;
+  display: flex;
+  align-items: center;
+}
+.logo span {
+  color: #008CAF;
+}
+.logo {
+  font-family: 'Roboto Flex', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 3%;
+  flex: 1;
+}
+.links {
+  display: flex;
+  list-style: none;
+  gap: 24px;
+}
+.links li {
+  cursor: pointer;
+}
+.links .activeli {
+  position: relative;
+  height: max-content;
+}
+.links .activeli::before {
+  content: '';
+  height: 2px;
+  border-radius: 8px;
+  width: 100%;
+  background-color: #008CAF;
+  position: absolute;
+  top: 100%;
+}
+.navActions {
+  display: flex;
+  flex: 1;
+  justify-content: end;
+  text-align: end;
+  align-items: center;
+  width: 100%;
+}
+.navIcons {
+  display: flex;
+  gap: 16px;
+}
+.languageSelector {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.arrowDown {
+  margin-left: 2px;
+  height: 14px;
+  width: 14px;
+}
+.row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.rowS {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.colHalf {
+  flex-basis: 50%;
+  min-width: 300px;
+}
+
+.topImg {
+  max-width: 100%;
+  padding: 50px 0;
+}
+
+.heading {
+  font-size: 50px;
+  line-height: 60px;
+  margin: 25px 0;
+}
+
+.btn {
+  display: inline-block;
+  background: #008CAF;
+  color: #fff;
+  padding: 8px 30px;
+  margin: 30px 0;
+  border-radius: 30px;
+  transition: background ease 300ms;
+}
+
+.btn:hover {
+  background: #00b8e6;
+}
+
+.header {
+  background: radial-gradient(#fff, #ffd6d6);
+}
+
+.headerRow {
+  margin-top: 70px;
+}
+
+.categories {
+  margin-left: 75px;
+  margin-right: 75px;
+}
+
+.colThird {
+  flex-basis: 30%;
+  min-width: 250px;
+  margin-bottom: 30px;
+  align-items: center;
+}
+
+.centeredImg {
+  align-items: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+  padding: 90px;
+}
+
+.smallContainer {
+  width: 80%;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.smallContainerHeading {
+  padding-top: 20px;
+}
+
+.colQuarter {
+  flex-basis: 25%;
+  padding: 10px;
+  min-width: 200px;
+  margin-bottom: 50px;
+  transition: transform 0.5s;
+}
+
+
+.title {
+  text-align: center;
+  margin-bottom: 16px;
+  position: relative;
+  line-height: 60px;
+  color: #555;
+}
+
+.title::after {
+  content: '';
+  background: #008CAF;
+  width: 80px;
+  height: 5px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.colQuarterText {
+  font-size: 14px;
+}
+
+.colQuarter:hover {
+  transform: translateY(-5px);
+}
+.offer {
+  background: radial-gradient(#fff, #ffd6d6);
+  margin-top: 80px;
+  padding: 30px 0;
+  display: flex;
+}
+.offerRow {
+  display: flex;
+  align-items: center;
+}
+.offerImg {
+  padding: 50px;
+}
+
+.brands {
+  margin: 100px auto;
+}
+
+.colSmall {
+  width: 160px;
+}
+
+.brandImg {
+  width: 100%;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.brandImg:hover {
+  transform: translateY(-8px);
+}
+
+.menuIcon {
+  width: 28px;
+  margin-left: 20px;
+  display: none;
+}
+.fieldset {
+  width: 300px;
+  height: 300px;
+}
+.offer {
+  background: radial-gradient(#fff,#ffd6d6);
+  margin-top: 80px;
+  padding: 30px 0;
+}
+.col2 a {
+  align-self: center;
+}
+.col2 .offerImg {
+  padding: 50px;
+}
+.brands {
+  margin: 100px auto;
+}
+.col5 {
+  width: 160px;
+}
+.col5 img {
+  width: 100%;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.col5 img:hover {
+  transform: translateY(-8px);
+}
+.worldIcon {
+  font-size: 24px;
+  cursor: pointer;
+}
+.languageSelector {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.arrowDown {
+  cursor: pointer;
+  margin-left: 4px;
+  transition: transform 300ms;
+}
+.arrowDown.open {
+  transform: rotate(180deg);
+}
+.dropdownMenu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  z-index: 10;
+  width: 120px;
+}
+.dropdownItem {
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 150ms ease;
+}
+.dropdownItem:hover {
+  background-color: #d8d8d8;
+}
+
+.horizontalScroll {
+  display: flex;
+  overflow-x: scroll;
+  padding: 12px 8px;
+  gap: 16px;
+  width: 100%;
+  /*scrollbar-width: none;*/
+}
+
+/*.horizontalScroll::-webkit-scrollbar {
+  display: none;
+}*/
+.titleAndArrows {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.titleAndArrows .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.titleAndArrows .arrows {
+  display: flex;
+  gap: 8px;
+}
+
+.productCard {
+  padding: 24px;
+  display: flex;
+  border-radius: 4px;
+  border: 1px solid #e0e0e0;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+.productCard:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.productImg {
+  height: 150px;
+  width: auto;
+}
+.productInfo {
+  margin-top: 16px;
+}
+.productCard .productInfo .productPrice {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.productCard .productInfo .productPrice h2 {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: 'Roboto Flex', sans-serif;
+}
+.productCard .productInfo .productPrice h3 {
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: line-through;
+  font-family: 'Roboto Flex', sans-serif;
+}
+.productCard .productInfo .productTitle {
+  height: 72px;
+  font-size: 24px;
+  font-weight: 500;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-family: 'Roboto Flex', sans-serif;
+}
+.productCard .productInfo .productReviews {
+  display: flex;
+  gap: 8px;
+}
+.productCard .productInfo .productReviews .stars {
+  display: flex;
+  gap: 2px;
+}
+.productCard .productInfo .productReviews .stars img {
+  width: 20px;
+  height: 20px;
+}
+.productCard .productInfo .productReviews .reviewsCount {
+  color: #1456B8;
+  font-size: 16px;
+  text-decoration: underline;
+}
+
+@media(max-width: 992px) {
+  .titleAndArrows .arrows {
+    display: none;
+  }
+  .main {
+    overflow-x: hidden;
+  }
+  .offer {
+    display: none;
+  }
+  .navbar {
+    display: none;
+  }
+}

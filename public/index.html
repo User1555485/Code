@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <script src="/src/app/script.js" defer></script>
+</body>
+</html>
+<!--<div className={styles.productCard}>
+                        <div className={styles.productCardImgDiv}>
+                            <img className={styles.productCardImg} src='/hpomen16xf0016nb.png' />
+                        </div>
+                        <div className={styles.productCardInfo}>
+                            <div className={styles.productCardInfoPrice}>
+                                <h3>€1249.00</h3>
+                                <h3>€1799.00</h3>
+                            </div>
+                            <h1 className={styles.productCardInfoName}>HP Omen 16-xf0016nb</h1>
+                            <div className={styles.productCardReviews}>
+                                <div className={styles.productCardReviewsStars}>
+                                    <img src='/star.svg' />
+                                    <img src='/star.svg' />
+                                    <img src='/star.svg' />
+                                    <img src='/star.svg' />
+                                    <img src='/star_half.svg' />
+                                </div>
+                                <div className={styles.productCardReviewsCountDiv}>
+                                    <p className={styles.productCardReviewsCount}>(16)</p>
+                                </div>
+                            </div>
+                            <div className={styles.productCardStorage}>
+                                <p className={styles.productCardStorageTitle}>{translate('chooseYourStorage')}</p>
+                                <div className={styles.productCardStorageOptions}>
+                                    <div className={styles.productCardStorageOption}>
+                                        <h3>512GB</h3>
+                                    </div>
+                                    <div className={classNames(styles.productCardStorageOption, styles.active)}>
+                                        <h3>1TB</h3>
+                                    </div>
+                                    <div className={styles.productCardStorageOption}>
+                                        <h3>2TB</h3>
+                                    </div>
+                                </div>
+                                <div className={styles.productCardStorage}>
+                                    <p className={styles.productCardStorageTitle}>{translate('chooseYourMemory')}</p>
+                                    <div className={styles.productCardStorageOptions}>
+                                        <div className={classNames(styles.productCardStorageOption, styles.active)}>
+                                            <h3>16GB</h3>
+                                        </div>
+                                        <div className={styles.productCardStorageOption}>
+                                            <h3>32GB</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className={styles.productCardStorage}>
+                                    <p className={styles.productCardStorageTitle}>{translate('chooseYourProcessor')}</p>
+                                    <div className={styles.productCardStorageOptions}>
+                                        <div className={classNames(styles.productCardStorageOption, styles.active)}>
+                                            <h3>Amd Ryzen 7</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button className={styles.productCardCTA}>{translate('buyNow')}</button>
+                        </div>
+                    </div>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <!--{products.map((product) => {
+                        return <div className={styles.productCard}>
+                        <div className={styles.productCardImgDiv}>
+                            <img className={styles.productCardImg} src='/hpomen16xf0016nb.png' />
+                        </div>
+                        <div className={styles.productCardInfo}>
+                            <div className={styles.productCardInfoPrice}>
+                                <h3>{product.newPrice}</h3>
+                                <h3>{product.oldPrice}</h3>
+                            </div>
+                            <h1 className={styles.productCardInfoName}>{product.name}</h1>
+                            <div className={styles.productCardReviews}>
+                                <div className={styles.productCardReviewsStars}>
+                                    <img src='/star.svg' />
+                                    <img src='/star.svg' />
+                                    <img src='/star.svg' />
+                                    <img src='/star.svg' />
+                                    <img src='/star_half.svg' />
+                                </div>
+                                <div className={styles.productCardReviewsCountDiv}>
+                                    <p className={styles.productCardReviewsCount}>({product.reviewsCount})</p>
+                                </div>
+                            </div>
+                            <button className={styles.productCardCTA}>{translate('buyNow')}</button>
+                        </div>
+                    </div>
+                })}-->
+
+
+
+                <!--.productCard {
+  /*TEMP*/
+  margin-bottom: 10px;
+  max-width: 480px;
+  /*TEMP*/
+  padding: 24px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  transition: box-shadow 200ms ease;
+}
+.productCard:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.productCardImgDiv {
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.productCardImg {
+  max-width: 166px;
+}
+.productCardInfo {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.productCardInfoPrice {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.productCardInfoPrice h3 {
+  font-family: 'Roboto Flex', sans-serif;
+  color: #292929;
+}
+.productCardInfoPrice h3:first-child {
+  font-size: 18px;
+  font-weight: bold;
+}
+.productCardInfoPrice h3:last-child {
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: line-through;
+}
+.productCardInfoName {
+  font-size: 20px;
+  font-family: 'Roboto Flex', sans-serif;
+  font-weight: 500;
+  color: #292929;
+}
+.productCardReviews {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.productCardReviewsStars img {
+  width: 18px;
+  height: 18px;
+}
+.productCardReviewsCount {
+  color: #1456B8;
+  font-family: 'Roboto Flex', sans-serif;
+  text-decoration: underline;
+}
+.productCardStorage {
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.productCardStorageOptions {
+  display: flex;
+  gap: 16px;
+}
+.productCardStorageOption {
+  display: flex;
+  padding: 10px 15px;
+  border: 2px solid #c9c9c9;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.active {
+  border: 2px solid #008CAF;
+}
+.productCardStorageOption h3 {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Roboto Flex', sans-serif;
+  cursor: pointer;
+}
+.productCardDescription {
+  color: #7A7A7A;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  font-family: 'Roboto Flex', sans-serif;
+}
+.productCardCTA {
+  margin-top: 8px;
+  padding: 8px;
+  background-color: #008CAF;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 20px;
+  font-family: 'Roboto Flex', sans-serif;
+  cursor: pointer;
+  transition:  background-color ease 300ms;
+}
+.productCardCTA:hover {
+  background-color: #00b8e6;
+}-->
+<!--
+<div className={styles.rowS}>
+                  <div className={styles.productCard}>
+                        <div className={styles.productCardImgDiv}>
+                            <img className={styles.productCardImg} src='/hpomen16xf0016nb.png' />
+                        </div>
+                        <div className={styles.productCardInfo}>
+                            <div className={styles.productCardInfoPrice}>
+                                <h3>€1249.00</h3>
+                                <h3>€1799.00</h3>
+                            </div>
+                            <h1 className={styles.productCardInfoName}>HP Omen 16-xf0016nb</h1>
+                            <div className={styles.productCardReviews}>
+                                <div className={styles.productCardReviewsStars}>
+                                    <img src='/star.svg' />
+                                    <img src='/star.svg' />
+                                    <img src='/star.svg' />
+                                    <img src='/star.svg' />
+                                    <img src='/star_half.svg' />
+                                </div>
+                                <div className={styles.productCardReviewsCountDiv}>
+                                    <p className={styles.productCardReviewsCount}>(16)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  <div className={styles.productCard}>
+                        <div className={styles.productCardImgDiv}>
+                            <img className={styles.productCardImg} src='/hpomen16xf0016nb.png' />
+                        </div>
+                        <div className={styles.productCardInfo}>
+                            <div className={styles.productCardInfoPrice}>
+                                <h3>€1249.00</h3>
+                                <h3>€1799.00</h3>
+                            </div>
+                            <h1 className={styles.productCardInfoName}>HP Omen 16-xf0016nb</h1>
+                            <div className={styles.productCardReviews}>
+                                <div className={styles.productCardReviewsStars}>
+                                    <img src='/star.svg' />
+                                    <img src='/star.svg' />
+                                    <img src='/star.svg' />
+                                    <img src='/star.svg' />
+                                    <img src='/star_half.svg' />
+                                </div>
+                                <div className={styles.productCardReviewsCountDiv}>
+                                    <p className={styles.productCardReviewsCount}>(16)</p>
+                                </div>
+                            </div>
+                            <button className={styles.productCardCTA}>{translate('buyNow')}</button>
+                        </div>
+                    </div>
+                  <div className={styles.productCard}>
+                        <div className={styles.productCardImgDiv}>
+                            <img className={styles.productCardImg} src='/hpomen16xf0016nb.png' />
+                        </div>
+                        <div className={styles.productCardInfo}>
+                            <div className={styles.productCardInfoPrice}>
+                                <h3>€1249.00</h3>
+                                <h3>€1799.00</h3>
+                            </div>
+                            <h1 className={styles.productCardInfoName}>HP Omen 16-xf0016nb</h1>
+                            <div className={styles.productCardReviews}>
+                                <div className={styles.productCardReviewsStars}>
+                                    <img src='/star.svg' />
+                                    <img src='/star.svg' />
+                                    <img src='/star.svg' />
+                                    <img src='/star.svg' />
+                                    <img src='/star_half.svg' />
+                                </div>
+                                <div className={styles.productCardReviewsCountDiv}>
+                                    <p className={styles.productCardReviewsCount}>(16)</p>
+                                </div>
+                            </div>
+                            <button className={styles.productCardCTA}>{translate('buyNow')}</button>
+                        </div>
+                    </div>
+                  <div className={styles.productCard}>
+                        <div className={styles.productCardImgDiv}>
+                            <img className={styles.productCardImg} src='/hpomen16xf0016nb.png' />
+                        </div>
+                        <div className={styles.productCardInfo}>
+                            <div className={styles.productCardInfoPrice}>
+                                <h3>€1249.00</h3>
+                                <h3>€1799.00</h3>
+                            </div>
+                            <h1 className={styles.productCardInfoName}>HP Omen 16-xf0016nb</h1>
+                            <div className={styles.productCardReviews}>
+                                <div className={styles.productCardReviewsStars}>
+                                    <img src='/star.svg' />
+                                    <img src='/star.svg' />
+                                    <img src='/star.svg' />
+                                    <img src='/star.svg' />
+                                    <img src='/star_half.svg' />
+                                </div>
+                                <div className={styles.productCardReviewsCountDiv}>
+                                    <p className={styles.productCardReviewsCount}>(16)</p>
+                                </div>
+                            </div>
+                            <button className={styles.productCardCTA}>{translate('buyNow')}</button>
+                        </div>
+                    </div>
+                </div>-->

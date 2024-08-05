@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f8f8;
+}
+
+a {
+  text-decoration: none;
+  color: #555;
+}
+
+p {
+  color: #555;
+}
+
+h4 {
+  color: #555;
+  font-weight: normal;
+}
+
+.rating .fa {
+  color: #ff523b;
+}
+
+small {
+  color: #555;
+  padding-bottom: 10px;
+}
